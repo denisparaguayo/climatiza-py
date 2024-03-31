@@ -1,50 +1,59 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
 ---
 
-<!doctype html>
-<html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/pages/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
+<Layout title="hola mundo" description="mi descripcion">
+	<Hero />
+	<main class="container mx-auto py-8 px-2">
+		<!-- Sección de servicios -->
+		<section class="mt-8 text-white" id="servicios">
+			<h2 class="text-2xl font-semibold mb-4 text-gray-900">Mis Servicios</h2>
+			<ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+				<li class="bg-gray-900 p-6 rounded-lg shadow-md">
+					<h3 class="text-xl font-semibold mb-2 text-white">
+						Instalación de Aires Split
+					</h3>
+					<p>
+						Realizo la instalación de aires acondicionados split de forma
+						eficiente y profesional.
+					</p>
+				</li>
+				<li class="bg-gray-900 p-6 rounded-lg shadow-md">
+					<h3 class="text-xl font-semibold mb-2 text-white">
+						Mantenimiento Preventivo
+					</h3>
+					<p>
+						Ofrezco servicios de mantenimiento preventivo para asegurar el
+						funcionamiento óptimo de tus equipos.
+					</p>
+				</li>
+				<li class="bg-gray-900 p-6 rounded-lg shadow-md">
+					<h3 class="text-xl font-semibold mb-2 text-white">
+						Reparación y Diagnóstico
+					</h3>
+					<p>
+						Cuento con experiencia en la reparación y diagnóstico de fallas en
+						aires acondicionados.
+					</p>
+				</li>
 			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
+			<div class="text-center mt-8">
+				<a
+					href="/servicios"
+					class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-full"
+					>Más Info de los Servicios</a
+				>
+			</div>
+		</section>
+
+		<!-- Sección de contacto -->
+		<section class="mt-8">
+			<h2 class="text-2xl font-semibold mb-4">Contáctame</h2>
+			<p class="text-lg text-gray-700 leading-relaxed mb-4">
+				Para más información o para solicitar mis servicios, no dudes en ponerte
+				en contacto conmigo:
 			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
-		<Footer />
-	</body>
-</html>
+		</section>
+	</main>
+</Layout>
