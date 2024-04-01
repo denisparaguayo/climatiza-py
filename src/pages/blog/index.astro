@@ -15,12 +15,16 @@ const posts = (await getCollection('blog')).sort(
 	<head>
 		<BaseHead
 			title="Blog"
-			description="todas las publicaciones del blog de ClimatizaPy"
+			description="Explora todas las publicaciones del blog de ClimatizaPy. Encuentra consejos, guías y noticias sobre climatización, aire acondicionado y mantenimiento de aires acondicionados."
 		/>
 		<style>
 			main {
-				width: 960px;
+				width: 920px;
+				max-width: calc(100% - 10px);
+				margin: auto;
+				padding: 3em 1em;
 			}
+
 			ul {
 				display: flex;
 				flex-wrap: wrap;

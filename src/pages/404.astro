@@ -1,0 +1,30 @@
+---
+import Layout from '../layouts/Layout.astro';
+import BtnWa from '../components/BtnWa.astro';
+---
+
+<Layout
+	title="pagina no encontrada"
+	description="Lo sentimos, la página que buscas no se encuentra disponible. En ClimatizaPy, nos esforzamos por brindarte la mejor experiencia, pero parece que has llegado a un destino inexistente. ¿Necesitas ayuda? No dudes en contactarnos para obtener asistencia con tu climatización.">
+	<main class="bg-gray-100 min-h-screen flex items-center justify-center">
+		<section class="max-w-lg mx-auto text-center">
+			<h1 class="text-4xl font-bold text-gray-900 mb-4">
+				404 - Página no encontrada
+			</h1>
+			<p class="text-lg text-gray-800 mb-4">
+				Lo sentimos, la página que buscas no se encuentra disponible.
+			</p>
+			<p class="text-lg text-gray-800 mb-4">
+				En ClimatizaPy, nos esforzamos por brindarte la mejor experiencia, pero
+				parece que has llegado a un destino inexistente.
+			</p>
+			<p class="text-lg text-gray-800 mb-8">
+				¿Necesitas ayuda? No dudes en <a
+					href="/contacto"
+					class="text-blue-600 hover:underline">contactarnos</a
+				> para obtener asistencia con tu climatización.
+			</p>
+			<BtnWa href="/" texto="Volver al Inicio" />
+		</section>
+	</main>
+</Layout>

@@ -1,0 +1,63 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+	title="Contacto"
+	description="¿Listo para obtener la climatización perfecta? Ponte en contacto con ClimatizaPy hoy mismo. Estoy aquí para ayudarte con cualquier consulta sobre instalación, mantenimiento o reparación de aires acondicionados split. ¡Haz que tu hogar esté fresco y cómodo todo el año!"
+	image="/hero.png">
+	<section class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 bg-gray-900">
+		<div class="py-8 lg:py-16 px-4">
+			<h2
+				class="mb-4 text-4xl tracking-tight font-extrabold text-center text-white">
+				Contáctame
+			</h2>
+			<p class="mb-8 lg:mb-16 font-light text-center text-gray-500 sm:text-xl">
+				Estay disponibles de lunes a viernes de 8:00 a 17:00 para responder tus
+				consultas. Utiliza el formulario siguiente para comunicarte en cualquier
+				momento.
+			</p>
+			<form name="desdeWeb" method="POST" data-netlify="true" class="space-y-8">
+				<div>
+					<label for="email" class="block mb-2 text-sm font-medium text-white"
+						>Tu Coreo</label
+					>
+					<input
+						type="email"
+						id="email"
+						class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
+						placeholder="nombre@gmail.com"
+						required
+					/>
+				</div>
+				<div>
+					<label for="subject" class="block mb-2 text-sm font-medium text-white"
+						>Asunto</label
+					>
+					<input
+						type="text"
+						id="subject"
+						class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500"
+						placeholder="Permíteme saber en qué te puedo ayudar"
+						required
+					/>
+				</div>
+				<div class="sm:col-span-2">
+					<label for="message" class="block mb-2 text-sm font-medium text-white"
+						>Tu mensaje</label
+					>
+					<textarea
+						id="message"
+						rows="6"
+						class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500"
+						placeholder="Deja tu mensaje..."></textarea>
+				</div>
+				<button
+					type="submit"
+					class="bg-green-500 py-3 px-5 text-sm font-medium text-center text-white rounded-lg sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300"
+					>Enviar mensaje</button
+				>
+			</form>
+		</div>
+	</section>
+</Layout>
