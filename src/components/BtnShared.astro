@@ -1,0 +1,39 @@
+---
+const post = Astro.props;
+const blogUrl = `/blog/${post.slug}`; // Construir la URL del artículo del blog
+---
+
+<button
+	id="shareBtn"
+	class="inline-block bg-gray-900 text-white py-3 px-6 rounded-md shadow-md hover:bg-green-600 transition-colors duration-300">
+	Compartir Articulo >>
+</button>
+
+<script>
+	document.addEventListener('DOMContentLoaded', function () {
+		function shareBlogPost() {
+			const blogUrl = '{{ blogUrl }}';
+			if (navigator.share) {
+				navigator
+					.share({
+						title: document.title,
+						url: blogUrl,
+					})
+					.then(() =>
+						console.log('Enlace del artículo compartido exitosamente')
+					)
+					.catch((error) =>
+						console.error('Error al compartir el enlace del artículo', error)
+					);
+			} else {
+				console.error(
+					'La API de Web Share no está soportada en este navegador'
+				);
+			}
+		}
+
+		document
+			.getElementById('shareBtn')
+			.addEventListener('click', shareBlogPost);
+	});
+</script>
