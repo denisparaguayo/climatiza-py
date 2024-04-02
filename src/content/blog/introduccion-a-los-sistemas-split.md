@@ -8,18 +8,21 @@ heroImage: /hero.png
 ## Componentes principales:
 
 - **Unidad interior:** Esta unidad se coloca dentro del espacio que se desea climatizar y contiene el evaporador y el ventilador que distribuye el aire acondicionado.![](/unidad-interior.png)
+
 - **Unidad exterior:** Se ubica en el exterior del edificio y contiene el compresor y el condensador. Es responsable de disipar el calor absorbido del interior.![](/unidad-exterior.png)
+
 - **Tuberías de refrigeración:** Conectan la unidad interior y exterior para el flujo del refrigerante.![](/tuberia-de-refrigeracion.png)
+
 - **Cables eléctricos:** Permiten la transmisión de energía y señales entre las unidades.![](/cables-electricos.png)
 
 ## Funcionamiento básico:
 
 El sistema funciona mediante el ciclo de refrigeración:
 
-1. 1 El compresor en la unidad exterior comprime el refrigerante, aumentando su temperatura y presión.
-2. 2 El refrigerante caliente se dirige al condensador, donde se disipa el calor al aire exterior.
-3. 3 El refrigerante enfriado se expande en la unidad interior, absorbiendo el calor del aire interior.
-4. 4 El ciclo se repite continuamente para mantener la temperatura deseada.
+1. El compresor en la unidad exterior comprime el refrigerante, aumentando su temperatura y presión.
+2. El refrigerante caliente se dirige al condensador, donde se disipa el calor al aire exterior.
+3. El refrigerante enfriado se expande en la unidad interior, absorbiendo el calor del aire interior.
+4. El ciclo se repite continuamente para mantener la temperatura deseada
 
 ## Ventajas de los sistemas split:
 

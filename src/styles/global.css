@@ -40,6 +40,7 @@ h6 {
 
 h2 {
 	font-size: 2.441em;
+	margin-top: 10px;
 }
 h3 {
 	font-size: 1.953em;
@@ -59,7 +60,8 @@ a {
 }
 
 p {
-	margin-bottom: 1em;
+	margin-bottom: 16px;
+	margin-top: 16px;
 }
 .prose p {
 	margin-bottom: 2em;
@@ -76,9 +78,12 @@ table {
 }
 img {
 	max-width: 100%;
-	height: auto;
+	margin: 0 auto;
+	margin-top: 15px;
 	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Sombra suave */
 }
+
 code {
 	padding: 2px 5px;
 	background-color: rgb(var(--gray-light));
@@ -100,4 +105,22 @@ blockquote {
 hr {
 	border: none;
 	border-top: 1px solid rgb(var(--gray-light));
+}
+ul,
+/* Estilos para listas ordenadas y no ordenadas */
+ol, ul {
+	margin-left: 0;
+	padding-left: 20px; /* Espacio para los números */
+}
+
+/* Estilos para elementos de lista */
+li {
+	line-height: 1.5;
+	margin-bottom: 5px;
+	list-style-type: disc; /* Tipo de marcador de lista no ordenada */
+}
+
+/* Estilos para elementos de lista de listas ordenadas */
+ol li {
+	list-style-type: decimal; /* Tipo de marcador de lista ordenada */
 }
