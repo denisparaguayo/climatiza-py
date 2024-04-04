@@ -31,11 +31,3 @@ El sistema funciona mediante el ciclo de refrigeración:
 - Flexibilidad en la instalación, permitiendo ubicar la unidad interior en diferentes lugares.
 
 En resumen, los sistemas de aire acondicionado split son una opción popular para la climatización de espacios debido a su eficiencia, funcionamiento silencioso y flexibilidad de instalación.
-
-## Consideraciones finales:
-
-- Es importante seguir las instrucciones del fabricante para la instalación y mantenimiento del sistema.
-- Se recomienda realizar un mantenimiento periódico para asegurar un funcionamiento óptimo y prolongar la vida útil del equipo.
-- La instalación de un sistema split requiere habilidades técnicas y conocimientos específicos, por lo que es recomendable contar con la ayuda de un profesional cualificado.
-
-Con esta introducción, espero que tengas una mejor comprensión de los sistemas de aire acondicionado split y sus componentes, funcionamiento y ventajas. Si tienes más preguntas o necesitas información adicional, no dudes en preguntar.
