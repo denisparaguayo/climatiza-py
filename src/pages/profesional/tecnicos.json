@@ -1,0 +1,179 @@
+[
+	{
+		"id": 1,
+		"fullname": "Jorge Gonzalez",
+		"slug": "jorge-gonzalez",
+		"bio": "Técnico Superior en Refrigeración",
+		"picture": "https://avatars.githubusercontent.com/u/64248203?v=4",
+		"socialMedia": [
+			{
+				"name": "WhatsApp",
+				"url": "#"
+			},
+			{
+				"name": "Instagram",
+				"url": "#"
+			},
+			{
+				"name": "Facebook",
+				"url": "#"
+			}
+		],
+		"address": "Calle Principal 123",
+		"city": "Ciudad de Ejemplo",
+		"phoneNumber": "+1234567890",
+		"email": "jorge@example.com",
+		"experienceYears": 10,
+		"certifications": [
+			"Certificación en Instalación de Aire Acondicionado",
+			"Certificación en Mantenimiento Preventivo"
+		],
+		"servicesOffered": [
+			"Instalación de Aire Acondicionado",
+			"Mantenimiento",
+			"Reparación",
+			"Carga de Gas"
+		],
+		"availability": {
+			"lunes": "8:00 AM - 5:00 PM",
+			"martes": "8:00 AM - 5:00 PM",
+			"miércoles": "8:00 AM - 5:00 PM",
+			"jueves": "8:00 AM - 5:00 PM",
+			"viernes": "8:00 AM - 5:00 PM",
+			"sábado": "9:00 AM - 1:00 PM",
+			"domingo": "Cerrado"
+		}
+	},
+	{
+		"id": 2,
+		"fullname": "María López",
+		"slug": "maria-lopez",
+		"bio": "Especialista en Climatización Residencial",
+		"picture": "https://randomuser.me/api/portraits/women/1.jpg",
+		"socialMedia": [
+			{
+				"name": "WhatsApp",
+				"url": "#"
+			},
+			{
+				"name": "Instagram",
+				"url": "#"
+			},
+			{
+				"name": "Facebook",
+				"url": "#"
+			}
+		],
+		"address": "Avenida Libertad 456",
+		"city": "Asunción",
+		"phoneNumber": "+1234567890",
+		"email": "maria@example.com",
+		"experienceYears": 8,
+		"certifications": [
+			"Certificación en Instalación de Sistemas de Aire Acondicionado",
+			"Certificación en Mantenimiento de Equipos de Climatización"
+		],
+		"servicesOffered": [
+			"Instalación y Mantenimiento de Aires Acondicionados",
+			"Reparación de Sistemas de Refrigeración",
+			"Servicio de Carga de Gas"
+		],
+		"availability": {
+			"lunes": "8:00 AM - 6:00 PM",
+			"martes": "8:00 AM - 6:00 PM",
+			"miércoles": "8:00 AM - 6:00 PM",
+			"jueves": "8:00 AM - 6:00 PM",
+			"viernes": "8:00 AM - 6:00 PM",
+			"sábado": "9:00 AM - 2:00 PM",
+			"domingo": "Cerrado"
+		}
+	},
+	{
+		"id": 3,
+		"fullname": "Carlos Rodríguez",
+		"slug": "carlos-rodriguez",
+		"bio": "Técnico en Sistemas de Aire Acondicionado",
+		"picture": "https://randomuser.me/api/portraits/men/2.jpg",
+		"socialMedia": [
+			{
+				"name": "WhatsApp",
+				"url": "#"
+			},
+			{
+				"name": "Instagram",
+				"url": "#"
+			},
+			{
+				"name": "Facebook",
+				"url": "#"
+			}
+		],
+		"address": "Calle Mayor 789",
+		"city": "Luque",
+		"phoneNumber": "+1234567890",
+		"email": "carlos@example.com",
+		"experienceYears": 12,
+		"certifications": [
+			"Certificación en Instalación de Aire Acondicionado Central",
+			"Certificación en Mantenimiento de Equipos de Refrigeración Comercial"
+		],
+		"servicesOffered": [
+			"Instalación y Mantenimiento de Sistemas de Climatización",
+			"Reparación de Aparatos de Refrigeración",
+			"Servicio de Carga de Refrigerante"
+		],
+		"availability": {
+			"lunes": "8:00 AM - 5:00 PM",
+			"martes": "8:00 AM - 5:00 PM",
+			"miércoles": "8:00 AM - 5:00 PM",
+			"jueves": "8:00 AM - 5:00 PM",
+			"viernes": "8:00 AM - 5:00 PM",
+			"sábado": "9:00 AM - 1:00 PM",
+			"domingo": "Cerrado"
+		}
+	},
+	{
+		"id": 4,
+		"fullname": "Pedro Martinez",
+		"slug": "pedro-martinez",
+		"bio": "Especialista en Refrigeración Industrial",
+		"picture": "https://randomuser.me/api/portraits/men/3.jpg",
+		"socialMedia": [
+			{
+				"name": "WhatsApp",
+				"url": "#"
+			},
+			{
+				"name": "Instagram",
+				"url": "#"
+			},
+			{
+				"name": "Facebook",
+				"url": "#"
+			}
+		],
+		"address": "Avenida San Martín 101",
+		"city": "Ciudad del Este",
+		"phoneNumber": "+1234567890",
+		"email": "pedro@example.com",
+		"experienceYears": 15,
+		"certifications": [
+			"Certificación en Mantenimiento de Equipos de Refrigeración Industrial",
+			"Certificación en Instalación de Sistemas de Climatización Comercial"
+		],
+		"servicesOffered": [
+			"Instalación y Mantenimiento de Sistemas de Refrigeración Industrial",
+			"Reparación de Maquinaria de Climatización",
+			"Servicio de Carga de Gas Refrigerante"
+		],
+		"availability": {
+			"lunes": "8:00 AM - 5:00 PM",
+			"martes": "8:00 AM - 5:00 PM",
+			"miércoles": "8:00 AM - 5:00 PM",
+			"jueves": "8:00 AM - 5:00 PM",
+			"viernes": "8:00 AM - 5:00 PM",
+			"sábado": "9:00 AM - 12:00 PM",
+			"domingo": "Cerrado"
+		}
+	}
+]

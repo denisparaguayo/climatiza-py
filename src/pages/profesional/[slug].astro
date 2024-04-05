@@ -1,0 +1,122 @@
+---
+import TecSingle from '../../layouts/TecSingle.astro';
+import tecnicos from './tecnicos.json';
+export const prerender = false;
+
+const slug = Astro.params.slug;
+let tecnico;
+
+if (slug) {
+	tecnico = tecnicos.find((t) => t.slug === slug);
+}
+function getBackgroundColor(index) {
+	const colors = ['bg-[#14532d]', 'bg-[#c026d3]', 'bg-[#312e81]'];
+	return colors[index % colors.length];
+}
+---
+
+<TecSingle
+	title={tecnico.fullname}
+	description={tecnico.servicesOffered}
+	image={tecnico.picture}>
+	<section class="text-gray-600 body-font">
+		<div class="container mx-auto flex flex-col px-2 py-8 items-center">
+			<div class="lg:w-3/4">
+				<div class="p-2 bg-white rounded-lg shadow-md mb-8">
+					<div class="flex flex-col items-center">
+						<img
+							src={tecnico.picture}
+							alt={tecnico.fullname}
+							class="w-32 h-32 rounded-full mb-4"
+						/>
+						<h2 class="text-3xl font-semibold text-gray-900">
+							{tecnico.fullname}
+						</h2>
+					</div>
+				</div>
+				<div class="p-6 bg-white rounded-lg shadow-md">
+					<div class="grid gap-4">
+						<div>
+							<h3 class="text-gray-900 font-semibold mb-2">
+								Servicios Ofrecidos:
+							</h3>
+							<ul class="list-disc list-inside text-gray-700">
+								{
+									tecnico.servicesOffered.map((service) => (
+										<li>👷 {service}</li>
+									))
+								}
+							</ul>
+						</div>
+						<div>
+							<h3 class="text-gray-900 font-semibold mb-2">Teléfono:</h3>
+							<p class="text-gray-700">
+								<a href={`tel:${tecnico.phoneNumber}`} class="text-blue-500"
+									>📞 {tecnico.phoneNumber}
+								</a>
+							</p>
+						</div>
+					</div>
+
+					<div>
+						<h3 class="text-gray-900 font-semibold mb-2">Ciudad:</h3>
+						<p class="text-gray-700">📍 {tecnico.city}</p>
+					</div>
+
+					<div>
+						<h3 class="text-gray-900 font-semibold mb-2">
+							Años de experiencia:
+						</h3>
+						<p class="text-gray-700">📆 {tecnico.experienceYears}</p>
+					</div>
+					<div>
+						<h3 class="text-gray-900 font-semibold mb-2">Certificaciones:</h3>
+						<ul class="list-disc list-inside text-gray-700">
+							{
+								tecnico.certifications.map((certification) => (
+									<li>🎓 {certification}</li>
+								))
+							}
+						</ul>
+					</div>
+
+					<div>
+						<h3 class="text-gray-900 font-semibold mb-2">Disponibilidad:</h3>
+						<ul class="list-disc list-inside text-gray-700">
+							{
+								Object.entries(tecnico.availability).map(([day, hours]) => (
+									<li>
+										✅ {day}: {hours}
+									</li>
+								))
+							}
+						</ul>
+					</div>
+					<div>
+						<h3 class="text-gray-900 font-semibold mb-2">Dirección:</h3>
+						<p class="text-gray-700">{tecnico.address}</p>
+					</div>
+					<div>
+						<h3 class="text-gray-900 font-semibold mb-2">Email:</h3>
+						<a href={`mailto:${tecnico.email}`} class="text-gray-700"
+							>{tecnico.email}</a
+						>
+					</div>
+					<h3 class="text-gray-900 font-semibold mb-2 mt-4">Redes Sociales:</h3>
+					<ul class="grid grid-cols-3 gap-4">
+						{
+							tecnico.socialMedia.map((social, index) => (
+								<li
+									class={`rounded-md list-none p-2 ${getBackgroundColor(index)}`}>
+									<a href={social.url} target="_blank" class="text-white">
+										{social.name}
+									</a>
+								</li>
+							))
+						}
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+</TecSingle>

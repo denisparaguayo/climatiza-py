@@ -1,0 +1,29 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import tecnicos from './tecnicos.json';
+---
+
+<Layout>
+	<section class="p-6">
+		<h1 class="text-3xl font-bold mb-6">Técnicos de Aire Acondicionado</h1>
+		<ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+			{
+				tecnicos.map((tecnico) => (
+					<li class="border rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+						<a href={`/profesional/${tecnico.slug}`}>
+							<img
+								class="w-full h-auto"
+								src={tecnico.picture}
+								alt={tecnico.fullname}
+							/>
+							<div class="p-4">
+								<h2 class="text-xl font-bold mb-2">{tecnico.fullname}</h2>
+								<p class="text-gray-600">{tecnico.bio}</p>
+							</div>
+						</a>
+					</li>
+				))
+			}
+		</ul>
+	</section>
+</Layout>
