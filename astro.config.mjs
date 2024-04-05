@@ -8,5 +8,4 @@ import tailwind from '@astrojs/tailwind';
 export default defineConfig({
 	site: 'https://climatizapy.com',
 	integrations: [mdx(), sitemap(), tailwind()],
-	output: 'hybrid',
 });
