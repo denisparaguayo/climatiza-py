@@ -1,7 +1,208 @@
 ---
+import BtnWa from '../components/BtnWa.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Servicios">
-	<h1>Pagina en Construccion</h1>
+<Layout
+	title="Servicios"
+	description="servicios de instalaciond de aire split y mantenimiento preventivo"
+	image="/hero.png">
+	<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+		<h3 class="font-bold mb-8">
+			Instalación y Mantenimiento de Aires Acondicionados
+		</h3>
+
+		<div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+			<!-- Columna de Instalación -->
+			<div>
+				<h2 class="text-2xl font-bold mb-4">Instalación</h2>
+				<h3 class="text-xl font-semibold mb-2">Aires Acondicionados</h3>
+				<ul class="list-disc pl-8 mb-4">
+					<li>Instalación del equipo Unidad Interior y Exterior</li>
+					<li>Interconexión</li>
+					<li>Soporte del condensador</li>
+					<li>Alimentación eléctrica</li>
+					<li>Limpieza del lugar una vez terminado</li>
+				</ul>
+			</div>
+
+			<!-- Columna de Mantenimiento -->
+			<div>
+				<h2 class="text-2xl font-bold mb-4">Mantenimiento</h2>
+				<h3 class="text-xl font-semibold mb-2">Aires Acondicionados</h3>
+				<ul class="list-disc pl-8 mb-4">
+					<li>
+						Desarmado y limpieza general de las unidades del interior y exterior
+					</li>
+					<li>Desinfección de los equipos</li>
+					<li>Drenado del desagüe</li>
+					<li>Limpieza del lugar una vez terminado</li>
+				</ul>
+			</div>
+		</div>
+		<div class="container mx-auto py-8">
+			<h1 class="text-3xl font-bold text-start mb-8">
+				Precios de Instalación y Mantenimiento
+			</h1>
+
+			<!-- Selección de BTU -->
+			<div class="max-w-md mx-auto mb-6">
+				<label for="btu-select" class="block font-medium text-gray-700"
+					>Selecciona tu <span class="font-bold text-green-500">BTU:</span
+					></label
+				>
+				<select
+					id="btu-select"
+					name="btu-select"
+					class="mt-1 block w-full py-2 px-3 border border-gray-900 bg-white rounded-md shadow-sm focus:outline-none focus:ring-gray-900 focus:border-gray-900">
+					<option selected value="elige">Slecciona</option>
+					<option value="9000">9.000</option>
+					<option value="12000">12.000</option>
+					<option value="18000">18.000</option>
+					<option value="24000">24.000</option>
+					<option value="30000">30.000</option>
+					<option value="36000">36.000</option>
+					<option value="32000-48000">32.000 a 48.000</option>
+				</select>
+			</div>
+
+			<div id="precio-info" class="container mx-auto">
+				<!-- Lista de precios de Instalación -->
+				<div id="instalacion-info" class="bg-white oculto mb-10">
+					<h3 class="font-semibold mb-4 text-center">
+						Instalación o Mantenimiento <span
+							id="seleccion"
+							class="text-green-500 hidden">Seleccion</span
+						>
+					</h3>
+
+					<div id="instalacion-list" class="grid grid-cols-1 gap-y-2 w-full">
+						<!-- Lista de servicios de instalación -->
+					</div>
+				</div>
+				<BtnWa texto="Solicita tu Instalacion o Mantenimiento " />
+			</div>
+
+			<script is:inline>
+				const precios = {
+					9000: {
+						instalacion: 350000,
+						mantenimiento: 200000,
+						desmontaje: 200000,
+						diagnostico: 140000,
+						verificacion: 80000,
+						carga_gas: 'Sujeto a diagnóstico',
+					},
+					12000: {
+						instalacion: 350000,
+						mantenimiento: 200000,
+						desmontaje: 200000,
+						diagnostico: 140000,
+						verificacion: 80000,
+						carga_gas: 'Sujeto a diagnóstico',
+					},
+					18000: {
+						instalacion: 350000,
+						mantenimiento: 300000,
+						desmontaje: 200000,
+						diagnostico: 140000,
+						verificacion: 80000,
+						carga_gas: 'Sujeto a diagnóstico',
+					},
+					24000: {
+						instalacion: 400000,
+						mantenimiento: 300000,
+						desmontaje: 250000,
+						diagnostico: 140000,
+						verificacion: 80000,
+						carga_gas: 'Sujeto a diagnóstico',
+					},
+					30000: {
+						instalacion: 400000,
+						mantenimiento: 300000,
+						desmontaje: 250000,
+						diagnostico: 140000,
+						verificacion: 80000,
+						carga_gas: 'Sujeto a diagnóstico',
+					},
+					36000: {
+						instalacion: 950000,
+						mantenimiento: 550000,
+						desmontaje: 600000,
+						diagnostico: 200000,
+						verificacion: 80000,
+						carga_gas: 'Sujeto a diagnóstico',
+					},
+					'32000-48000': {
+						instalacion: 950000,
+						mantenimiento: 550000,
+						desmontaje: 600000,
+						diagnostico: 200000,
+						verificacion: 80000,
+						carga_gas: 'Sujeto a diagnóstico',
+					},
+				};
+
+				const btuSelect = document.getElementById('btu-select');
+				const instalacionInfo = document.getElementById('instalacion-info');
+				const seleccion = document.getElementById('seleccion');
+
+				btuSelect.addEventListener('change', () => {
+					const btuValue = btuSelect.value; // Obtener valor seleccionado del BTU
+					const precio = precios[btuValue];
+
+					if (precio) {
+						const mostrarbtu = seleccion;
+						mostrarbtu.innerHTML = `<span class="text-black">Para</span> <span class="font-extrabold">${btuValue}</span> <span class="text-black">BTU</span>`;
+						// Actualizar información de instalación
+						const instalacionList = document.getElementById('instalacion-list');
+						instalacionList.innerHTML = `
+						<table>
+								<thead>
+									<tr class="bg-gray-900">
+										<th class="py-2 px-2 text-left text-white">Servicio</th>
+										<th class="py-2 px-2 text-left text-white">Precio</th>
+									</tr>
+								</thead>
+								<tbody >
+									<tr>
+										<td class="py-2">Mano de obra - Instalación AA</td>
+										<td class="bg-gray-800 py-2 px-2 text-white font-semibold">${precio.instalacion.toLocaleString()} Gs</td>
+									</tr>
+									<tr>
+										<td class="py-2">Mano de obra - Mantenimiento</td>
+										<td class="bg-gray-800 py-2 px-2 text-white font-semibold">${precio.mantenimiento.toLocaleString()} Gs</td>
+									</tr>
+									<tr>
+										<td class="py-2">Mano de obra - Desmontaje del AA</td>
+										<td class="bg-gray-800 py-2  px-2 text-white font-semibold">${precio.desmontaje.toLocaleString()} Gs</td>
+									</tr>
+									<tr>
+										<td class="py-2">Visita de verificación (Verificar la falla del equipo ya instalado - Solo Diagnóstico)</td>
+										<td class="bg-gray-800 py-2 px-2 text-white font-semibold">${precio.diagnostico.toLocaleString()} Gs</td>
+									</tr>
+									<tr>
+										<td class="py-2">Visita de Verificación (Ver el lugar a instalar el AA y el BTU necesario)</td>
+										<td class="bg-gray-800 py-2  px-2 text-white font-semibold">${precio.verificacion.toLocaleString()} Gs</td>
+									</tr>
+									<tr>
+										<td class="py-2">Mano de obra - Carga de gas</td>
+										<td class="bg-gray-800 py-2 px-2 text-white font-semibold">${precio.carga_gas}</td>
+									
+								</tbody>
+    					</table>
+									`;
+
+						// Mostrar la información de precios
+						instalacionInfo.classList.remove('oculto');
+						seleccion.classList.remove('hidden');
+					} else {
+						// Ocultar la información si no hay precios disponibles
+						instalacionInfo.classList.add('oculto');
+						seleccion.classList.add('hidden');
+					}
+				});
+			</script>
+		</div>
+	</main>
 </Layout>
