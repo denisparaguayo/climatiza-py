@@ -1,14 +1,14 @@
 [
 	{
 		"id": 1,
-		"fullname": "Jorge Gonzalez",
-		"slug": "jorge-gonzalez",
+		"fullname": "Gustavo Florentin",
+		"slug": "gustavo-florentin",
 		"bio": "Técnico Superior en Refrigeración",
-		"picture": "https://avatars.githubusercontent.com/u/64248203?v=4",
+		"picture": "/tecnicos/gus-florentin.jpeg",
 		"socialMedia": [
 			{
 				"name": "WhatsApp",
-				"url": "#"
+				"url": "https://wa.me/595986528100"
 			},
 			{
 				"name": "Instagram",
@@ -19,29 +19,32 @@
 				"url": "#"
 			}
 		],
-		"address": "Calle Principal 123",
-		"city": "Ciudad de Ejemplo",
-		"phoneNumber": "+1234567890",
-		"email": "jorge@example.com",
-		"experienceYears": 10,
+		"address": "Carlos Gimenez 121 casi Cruz Roja Paraguaya ",
+		"city": "San Lorenzo",
+		"phoneNumber": "0986528100",
+		"email": "Tiogus22@outlook.com ",
+		"experienceYears": 1,
 		"certifications": [
-			"Certificación en Instalación de Aire Acondicionado",
+			"Certificación en Instalación de Aire Acondicionado Monofasico SNPP",
+			"Certificación en Instalación de Aire Acondicionado Trifasico SNPP",
 			"Certificación en Mantenimiento Preventivo"
 		],
 		"servicesOffered": [
-			"Instalación de Aire Acondicionado",
-			"Mantenimiento",
-			"Reparación",
-			"Carga de Gas"
+			"Reparación de Aire Acondicionado Monofasico y Trifasico",
+			"Mantenimiento Preventivo",
+			"Mantenimiento Correctivo",
+			"Carga de Gas",
+			"Cambio de Placa",
+			"Cambio de Compresor"
 		],
 		"availability": {
-			"lunes": "8:00 AM - 5:00 PM",
-			"martes": "8:00 AM - 5:00 PM",
-			"miércoles": "8:00 AM - 5:00 PM",
-			"jueves": "8:00 AM - 5:00 PM",
-			"viernes": "8:00 AM - 5:00 PM",
-			"sábado": "9:00 AM - 1:00 PM",
-			"domingo": "Cerrado"
+			"lunes": "7:00 AM - 6:00 PM",
+			"martes": "7:00 AM - 6:00 PM",
+			"miércoles": "7:00 AM - 6:00 PM",
+			"jueves": "7:00 AM - 6:00 PM",
+			"viernes": "7:00 AM - 6:00 PM",
+			"sábado": "7:00 AM - 6:00 PM",
+			"domingo": "7:00 AM - 12:00 AM"
 		}
 	},
 	{
