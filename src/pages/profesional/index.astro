@@ -11,11 +11,7 @@ import tecnicos from '../../../tecnicos.json';
 				tecnicos.map((tecnico) => (
 					<li class="border rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
 						<a href={`/profesional/${tecnico.slug}`}>
-							<img
-								class="w-full h-auto"
-								src={tecnico.picture}
-								alt={tecnico.fullname}
-							/>
+							<img class=" h-40" src={tecnico.picture} alt={tecnico.fullname} />
 							<div class="p-4">
 								<h2 class="text-xl font-bold mb-2">{tecnico.fullname}</h2>
 								<p class="text-gray-600">{tecnico.bio}</p>

@@ -49,14 +49,14 @@
 	},
 	{
 		"id": 2,
-		"fullname": "María López",
-		"slug": "maria-lopez",
-		"bio": "Especialista en Climatización Residencial",
-		"picture": "https://randomuser.me/api/portraits/women/1.jpg",
+		"fullname": "Luis Britez",
+		"slug": "luis-britez",
+		"bio": "Especialista en Climatización Residencial & Electricidad Domiciliaria",
+		"picture": "/tecnicos/luis-britez.png",
 		"socialMedia": [
 			{
 				"name": "WhatsApp",
-				"url": "#"
+				"url": "https://wa.me/595982323449"
 			},
 			{
 				"name": "Instagram",
@@ -67,28 +67,33 @@
 				"url": "#"
 			}
 		],
-		"address": "Avenida Libertad 456",
+		"address": "Calle Mayor Fleitas",
 		"city": "Asunción",
-		"phoneNumber": "+1234567890",
-		"email": "maria@example.com",
-		"experienceYears": 8,
+		"phoneNumber": "0982323449 ",
+		"email": "ferbritz1234@gmail.com ",
+		"experienceYears": 3,
 		"certifications": [
 			"Certificación en Instalación de Sistemas de Aire Acondicionado",
-			"Certificación en Mantenimiento de Equipos de Climatización"
+			"Certificación en Mantenimiento de Equipos de Climatización",
+			"Certificación en Electricidad Domiciliaria",
+			"Certificación en Reparación de Circuitos Eléctricos"
 		],
 		"servicesOffered": [
 			"Instalación y Mantenimiento de Aires Acondicionados",
-			"Reparación de Sistemas de Refrigeración",
-			"Servicio de Carga de Gas"
+			"Desinstalación de Acondicionadores de Aire ",
+			"Reparación y cambio de Placas Electrónicas",
+			"Servicio de Electricidad Domiciliaria",
+			"Plomeria",
+			"Reparación de artefactos eléctricos (tv, plancha, ducha, termocalefon)"
 		],
 		"availability": {
-			"lunes": "8:00 AM - 6:00 PM",
-			"martes": "8:00 AM - 6:00 PM",
-			"miércoles": "8:00 AM - 6:00 PM",
-			"jueves": "8:00 AM - 6:00 PM",
-			"viernes": "8:00 AM - 6:00 PM",
-			"sábado": "9:00 AM - 2:00 PM",
-			"domingo": "Cerrado"
+			"lunes": "7:00 AM - 6:00 PM",
+			"martes": "7:00 AM - 6:00 PM",
+			"miércoles": "7:00 AM - 6:00 PM",
+			"jueves": "7:00 AM - 6:00 PM",
+			"viernes": "7:00 AM - 6:00 PM",
+			"sábado": "7:00 AM - 6:00 PM",
+			"domingo": "7:00 AM - 12:00 AM"
 		}
 	},
 	{

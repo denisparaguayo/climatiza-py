@@ -15,6 +15,15 @@ function getBackgroundColor(index) {
 }
 ---
 
+<style>
+	img {
+		max-width: 100%;
+		margin: 0 auto;
+		margin-top: 15px;
+		border-radius: 100% !important;
+	}
+</style>
+
 <TecSingle
 	title={tecnico.fullname}
 	description={tecnico.servicesOffered}
@@ -27,11 +36,14 @@ function getBackgroundColor(index) {
 						<img
 							src={tecnico.picture}
 							alt={tecnico.fullname}
-							class="w-32 h-32 rounded-full mb-4"
+							class="w-32 h-32 rounded-full mb-4 object-cover"
 						/>
 						<h2 class="text-3xl font-semibold text-gray-900">
 							{tecnico.fullname}
 						</h2>
+						<h3 class="text-xl text-gray-900">
+							{tecnico.bio}
+						</h3>
 					</div>
 				</div>
 				<div class="p-6 bg-white rounded-lg shadow-md">
