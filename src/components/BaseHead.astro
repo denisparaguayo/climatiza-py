@@ -57,3 +57,107 @@ const { title, description, image = '/hero.png' } = Astro.props;
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
+
+<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "HVACBusiness",
+		"name": "ClimatizaPy",
+		"image": "https://climatizapy.com/hero.png",
+		"url": "https://climatizapy.com",
+		"telephone": "0986550235",
+		"priceRange": "Barato con calidad",
+		"address": {
+			"@type": "PostalAddress",
+			"streetAddress": "Guaraníes 4779 e/ Hipólito Sánchez Y Tte. Ramírez Franco",
+			"addressLocality": "Asunción",
+			"addressRegion": "Central",
+			"postalCode": "1431",
+			"addressCountry": "Paraguay"
+		},
+		"geo": {
+			"@type": "GeoCoordinates",
+			"latitude": -25.320399852204194,
+			"longitude": -57.56268987411528
+		},
+		"openingHoursSpecification": {
+			"@type": "OpeningHoursSpecification",
+			"dayOfWeek": [
+				"Lunes",
+				"Martes",
+				"Miércoles",
+				"Jueves",
+				"Viernes",
+				"Sabado",
+				"Domingo"
+			],
+			"opens": "08:00",
+			"closes": "20:00"
+		},
+		"sameAs": [
+			"https://www.facebook.com/fachadenis",
+			"https://twitter.com/Deniscantero6",
+			"https://www.instagram.com/_denisricardo/",
+			"https://www.tiktok.com/@denisrpy"
+		],
+		"aggregateRating": {
+			"@type": "AggregateRating",
+			"ratingValue": "4.5",
+			"reviewCount": "250"
+		},
+		"areaServed": {
+			"@type": "GeoShape",
+			"addressCountry": "Paraguay"
+		},
+		"paymentAccepted": "Efectivo, Transferencia Bancaria",
+		"currenciesAccepted": "PYG",
+		"hasOfferCatalog": {
+			"@type": "OfferCatalog",
+			"name": "Servicios",
+			"itemListElement": [
+				{
+					"@type": "OfferCatalog",
+					"name": "Instalación",
+					"itemListElement": [
+						{
+							"@type": "Offer",
+							"itemOffered": {
+								"@type": "Service",
+								"name": "Instalación de Aire Acondicionado Split"
+							},
+							"price": "350000"
+						}
+					]
+				},
+				{
+					"@type": "OfferCatalog",
+					"name": "Mantenimiento",
+					"itemListElement": [
+						{
+							"@type": "Offer",
+							"itemOffered": {
+								"@type": "Service",
+								"name": "Mantenimiento de Aire Acondicionado"
+							},
+							"price": "250000"
+						}
+					]
+				},
+				{
+					"@type": "OfferCatalog",
+					"name": "Desmontaje",
+					"itemListElement": [
+						{
+							"@type": "Offer",
+							"itemOffered": {
+								"@type": "Service",
+								"name": "Desmontaje de Aire Acondicionado"
+							},
+							"price": "200000"
+						}
+					]
+				}
+			]
+		}
+	}
+</script>
