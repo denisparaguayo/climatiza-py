@@ -1,4 +1,6 @@
 ---
+import { Image } from 'astro:assets';
+import logo from '../../public/logo1.svg';
 const links = [
 	{
 		name: 'Inicio',
@@ -9,7 +11,7 @@ const links = [
 		href: '/servicios',
 	},
 	{
-		name: 'Blog',
+		name: 'Info',
 		href: '/blog',
 	},
 	{
@@ -23,15 +25,27 @@ const links = [
 ];
 ---
 
+<style>
+	img {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		box-shadow: none; /* Sombra suave */
+	}
+</style>
+
 <nav class="bg-gray-800 shadow-lg">
 	<div
-		class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
+		class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
 		<!-- Logo -->
 		<div>
 			<a
 				href="/"
 				class="text-white text-2xl font-semibold hover:text-green-500 transition-colors duration-300"
-				>Climatiza<span class="text-green-500">Py</span></a
+				><Image
+					src={logo}
+					alt={'Logo de la Empresa ClimatizaPY'}
+					class={'w-44 sm:w-64'}
+				/></a
 			>
 		</div>
 		<!-- Navbar links -->
