@@ -2,6 +2,8 @@
 import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero.astro';
 import BtnWa from '../components/BtnWa.astro';
+import Jumbo from '../components/Jumbo.astro';
+import Cobertura from '../components/Cobertura.astro';
 ---
 
 <Layout
@@ -147,6 +149,7 @@ import BtnWa from '../components/BtnWa.astro';
 			</div>
 		</section>
 		<!-- areas -->
+
 		<section class="bg-gray-100 py-8 px-4">
 			<div class="container mx-auto">
 				<h2 class="text-2xl font-semibold lg:text-3xl text-black">
@@ -156,29 +159,15 @@ import BtnWa from '../components/BtnWa.astro';
 				<p class="text-gray-600 mb-4">
 					Atendemos en Asunción y en las ciudades de Central, incluyendo:
 				</p>
-				<ul class="list-disc list-inside text-gray-600">
-					<li>Areguá</li>
-					<li>Capiatá</li>
-					<li>Fernando de la Mora</li>
-					<li>Itá</li>
-					<li>Itauguá</li>
-					<li>J. Augusto Saldívar</li>
-					<li>Lambaré</li>
-					<li>Limpio</li>
-					<li>Luque</li>
-					<li>Mariano Roque Alonso</li>
-					<li>Ñemby</li>
-					<li>San Antonio</li>
-					<li>San Lorenzo</li>
-					<li>Villa Elisa</li>
-					<li>Ypané</li>
-				</ul>
+				<Cobertura />
+
 				<p class="text-gray-600">
 					Ofrecemos servicios de instalación, mantenimiento y reparación de aire
 					acondicionado en estas áreas. ¡Contáctanos para más información!
 				</p>
 			</div>
 		</section>
+		<Jumbo />
 
 		<!-- Sección de contacto -->
 		<section class="bg-white">
@@ -268,6 +257,5 @@ import BtnWa from '../components/BtnWa.astro';
 				</div>
 			</div>
 		</section>
-		<BtnWa texto="WhatsApp" />
 	</main>
 </Layout>
