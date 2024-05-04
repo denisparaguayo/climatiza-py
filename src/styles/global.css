@@ -76,6 +76,16 @@ input {
 table {
 	width: 100%;
 }
+th {
+	background-color: #227f03;
+	color: #fff;
+	padding: 4px;
+}
+table,
+th,
+td {
+	border: 1px solid;
+}
 img {
 	max-width: 100%;
 	margin: 0 auto;
