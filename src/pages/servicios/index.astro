@@ -1,0 +1,38 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import servicios from '../../../Services.json';
+---
+
+<Layout
+	title="Servicios Técnicos de Refrigeración y Aire Acondicionado para Hogar y Comercio"
+	description="Ofrecemos instalación, mantenimiento y reparación de aires acondicionados y sistemas de refrigeración para hogares y comercios. heladeras convencionales y no frost."
+	image="/service.png">
+	<section class="bg-white">
+		<div
+			class="container flex flex-col items-center px-4 py-12 mx-auto text-center">
+			<h2
+				class="max-w-2xl mx-auto text-2xl font-semibold tracking-tight text-gray-800 xl:text-3xl">
+				Nuestros <span class="underline decoration-green-500">Servicios</span>
+			</h2>
+			<p class="max-w-4xl mt-4 text-gray-500">
+				Ofrecemos una amplia gama de servicios de instalación, mantenimiento y
+				reparación para tus sistemas de aire acondicionado y refrigeración.
+			</p>
+			<div class="grid gap-8 mt-8 xl:mt-12 sm:grid-cols-2 lg:grid-cols-3">
+				{
+					servicios.map((servicio) => (
+						<a href={servicio.link}>
+							<div class="w-full px-4 py-4 transition-colors duration-200 transform rounded-lg bg-gray-50 hover:bg-blue-200">
+								<div class="flex justify-center mx-auto text-blue-500" />
+								<h2 class="mt-4 text-2xl font-semibold text-gray-800">
+									{servicio.titulo}
+								</h2>
+								<p class="mt-2 text-gray-500">{servicio.descripcion}</p>
+							</div>
+						</a>
+					))
+				}
+			</div>
+		</div>
+	</section>
+</Layout>

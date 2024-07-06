@@ -1,0 +1,42 @@
+[
+	{
+		"titulo": "Instalación de Aire Acondicionado Split",
+		"descripcion": "Realizo la instalación de aires acondicionados split de forma eficiente y profesional.",
+		"link": "servicios/instalacion-aire-acondicionado-split"
+	},
+	{
+		"titulo": "Instalación de Aire Acondicionado Trifásico",
+		"descripcion": "Instalación profesional de sistemas de aire acondicionado trifásicos.",
+		"link": "servicios/instalacion-aire-acondicionado-trifasico"
+	},
+	{
+		"titulo": "Mantenimiento de Aire Acondicionado",
+		"descripcion": "Ofrezco servicios de mantenimiento preventivo para asegurar el funcionamiento óptimo de tus equipos.",
+		"link": "servicios/mantenimiento-aire-acondicionado"
+	},
+	{
+		"titulo": "Reparación de Aire Acondicionado",
+		"descripcion": "Diagnóstico y reparación rápida de fallas en sistemas de aire acondicionado, utilizando herramientas avanzadas.",
+		"link": "servicios/reparacion-aire-acondicionado"
+	},
+	{
+		"titulo": "Instalación de Sistemas de Refrigeración Comercial",
+		"descripcion": "Soluciones de refrigeración comercial adaptadas a las necesidades de tu negocio.",
+		"link": "servicios/instalacion-sistemas-refrigeracion-comercial"
+	},
+	{
+		"titulo": "Mantenimiento de Sistemas de Refrigeración Comercial",
+		"descripcion": "Mantenimiento preventivo y correctivo de sistemas de refrigeración comercial.",
+		"link": "servicios/mantenimiento-sistemas-refrigeracion-comercial"
+	},
+	{
+		"titulo": "Diagnóstico y Asesoría Técnica",
+		"descripcion": "Proveo diagnóstico y asesoría técnica para optimizar el rendimiento de tus equipos de climatización.",
+		"link": "servicios/diagnostico-asesoria-tecnica-climatizacion"
+	},
+	{
+		"titulo": "Reparación y Mantenimiento de Heladeras",
+		"descripcion": "Servicio integral de reparación y mantenimiento de heladeras para hogares y negocios.",
+		"link": "servicios/reparacion-mantenimiento-heladeras"
+	}
+]

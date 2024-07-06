@@ -4,150 +4,16 @@ import Hero from '../components/Hero.astro';
 import BtnWa from '../components/BtnWa.astro';
 import Jumbo from '../components/Jumbo.astro';
 import Cobertura from '../components/Cobertura.astro';
+import Services from '../components/Services.astro';
 ---
 
 <Layout
-	title="Especialista en Climatización Asuncion"
-	description="Soy Denis, tu especialista en climatización. Descubre mis servicios personalizados de instalación y mantenimiento de aires acondicionados split en Paraguay.">
+	title="Especialista en Climatización y Refrigeración en Asunción"
+	description="Soy Denis, tu especialista en climatización y refrigeración. Ofrezco servicios personalizados de instalación y mantenimiento de aires acondicionados split, reparacion de heladeras y freezers para hogares y comercios en Paraguay.">
 	<Hero />
 	<main>
 		<!-- Sección de servicios -->
-		<section class="bg-white">
-			<div
-				class="container flex flex-col items-center px-4 py-12 mx-auto text-center">
-				<h2
-					class="max-w-2xl mx-auto text-2xl font-semibold tracking-tight text-gray-900 xl:text-3xl">
-					Ahorre dinero <span class="text-blue-500"
-						>evite dolores de cabeza</span
-					>
-				</h2>
-
-				<p class="max-w-4xl mt-6 text-center text-gray-600 font-bold">
-					¿Su aire acondicionado se averió nuevamente? Bueno, tengo la solución
-					para vos. ClimatizaPy ofrece servicios de reparación y mantenimiento
-					de aire acondicionado para viviendas y empresas en Asuncion y Central.
-				</p>
-			</div>
-		</section>
-		<section class="bg-gray-900" id="servis">
-			<div class="container px-6 py-10 mx-auto">
-				<h2 class="text-2xl font-semibold capitalize lg:text-3xl text-white">
-					Mis <span class="underline decoration-green-500">Servicios</span>
-				</h2>
-
-				<p class="mt-4 xl:mt-6 text-gray-300">
-					La climatización saludable funciona mejor
-				</p>
-
-				<div
-					class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2 xl:grid-cols-3">
-					<div class="p-8 space-y-3 border-2 border-green-300 rounded-xl">
-						<span class="inline-block text-blue-400">
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								class="w-8 h-8"
-								fill="none"
-								viewBox="0 0 24 24"
-								stroke="currentColor">
-								<path
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									stroke-width="2"
-									d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"
-								></path>
-								<path
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									stroke-width="2"
-									d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"
-								></path>
-							</svg>
-						</span>
-
-						<h2 class="text-xl font-semibold capitalize text-white">
-							Instalación de Aires Split
-						</h2>
-
-						<p class="text-gray-300">
-							Realizo la instalación de aires acondicionados split de forma
-							eficiente y profesional.
-						</p>
-
-						<a
-							href="/servicios"
-							class="inline-flex py-3 px-3 capitalize transition-colors duration-300 transform rounded-xl rtl:-scale-x-100 bg-blue-500 text-white hover:underline hover:text-black">
-							Precios
-						</a>
-					</div>
-
-					<div class="p-8 space-y-3 border-2 border-green-300 rounded-xl">
-						<span class="inline-block text-blue-500 dark:text-blue-400">
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								class="w-8 h-8"
-								fill="none"
-								viewBox="0 0 24 24"
-								stroke="currentColor">
-								<path
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									stroke-width="2"
-									d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"
-								></path>
-							</svg>
-						</span>
-
-						<h2 class="text-xl font-semibold capitalize text-white">
-							Mantenimiento Preventivo
-						</h2>
-
-						<p class="text-gray-500 dark:text-gray-300">
-							Ofrezco servicios de mantenimiento preventivo para asegurar el
-							funcionamiento óptimo de tus equipos.
-						</p>
-
-						<a
-							href="/servicios"
-							class="inline-flex py-3 px-3 capitalize transition-colors duration-300 transform rounded-xl rtl:-scale-x-100 bg-blue-500 text-white hover:underline hover:text-black">
-							Precios
-						</a>
-					</div>
-
-					<div class="p-8 space-y-3 border-2 border-green-300 rounded-xl">
-						<span class="inline-block text-blue-500 dark:text-blue-400">
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								class="w-8 h-8"
-								fill="none"
-								viewBox="0 0 24 24"
-								stroke="currentColor">
-								<path
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									stroke-width="2"
-									d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
-								></path>
-							</svg>
-						</span>
-
-						<h2 class="text-xl font-semibold capitalize text-white">
-							Reparación y Diagnóstico
-						</h2>
-
-						<p class="text-gray-300">
-							Cuento con experiencia en la reparación y diagnóstico de fallas en
-							aires acondicionados.
-						</p>
-
-						<a
-							href="/servicios"
-							class="inline-flex py-3 px-3 capitalize transition-colors duration-300 transform rounded-xl rtl:-scale-x-100 bg-blue-500 text-white hover:underline hover:text-black">
-							Precios
-						</a>
-					</div>
-				</div>
-			</div>
-		</section>
+		<Services />
 		<!-- areas -->
 
 		<section class="bg-gray-100 py-8 px-4">
